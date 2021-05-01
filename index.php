@@ -12,7 +12,7 @@ if ($text == "") {
     $response  = "CON Welcome to the Mobile UPI Payments\n";
     $response .= "Please enter your PIN";
 
-} else if ($text == "123456"&&$phoneNumber=="7004359495") {
+} else if ($text == "123456"&&$phoneNumber=="+917004359495") {
     // Business logic for first level response
     $response = "CON Nice we can go ahead \n";
     $response .= "1. Account number \n";
