@@ -19,9 +19,9 @@ if ($text == "") {
 
 } else if ($text == "123456"&&$phoneNumber=="+917004359495") {
     // Business logic for first level response
-    $response = "CON Nice we can go ahead \n";
-    $response .= "1. Account number \n";
-
+    $response = "CON Select an Option \n";
+    $response .= "1. Check Account Balance \n";
+    $response .= "2. Send Payment \n";
 
 }
 else if ($text == "010101"&&$phoneNumber=="+919988776655") {
@@ -36,6 +36,9 @@ else if ($text == "010101"&&$phoneNumber=="+919988776655") {
 
 }else if ($text == "010101*1") {
     $response = "END Your account balance is Rs. 2000";
+
+}else if($text == "123456*2") { 
+    $response = "CON Enter Phone Number of Reciever";
 
 } else if($text == "123456*2*+919988776655") { 
     $response = "CON Enter Amount for Payment";
